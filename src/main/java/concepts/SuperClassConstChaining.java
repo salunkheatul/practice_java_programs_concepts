@@ -43,3 +43,10 @@ class SuperClassConstChaining extends Base {
         // Derived obj = new Derived();
     }
 }
+
+/*  ----- OUTPUT ------
+
+Calling parameterized constructor of base
+Calling parameterized constructor of derived
+
+*/

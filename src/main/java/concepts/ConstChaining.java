@@ -27,3 +27,12 @@ class ConstChaining {
         new ConstChaining();
     }
 }
+
+
+/*  ----- OUTPUT ------
+
+75
+5
+The Default constructor
+
+*/

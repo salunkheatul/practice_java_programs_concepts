@@ -31,4 +31,12 @@ public class Polymorphism {
         System.out.println(s.sum(10, 20, 30));
         System.out.println(s.sum(10.5, 20.5));
     }
-} 
+}
+
+/*  ----- OUTPUT ------
+
+30
+60
+31.0
+
+*/

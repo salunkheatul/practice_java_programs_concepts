@@ -42,3 +42,18 @@ class InitBlockBeforeConstructor {
         new InitBlockBeforeConstructor(10);
     }
 }
+
+/*  ----- OUTPUT ------
+
+init x===> 1
+init y===> 2
+second init
+default x===> 1
+default y===> 2
+init x===> 1
+init y===> 2
+second init
+parameterized x===> 10
+parameterized y===> 2
+
+*/
