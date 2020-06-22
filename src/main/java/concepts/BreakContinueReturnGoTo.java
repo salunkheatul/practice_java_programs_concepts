@@ -1,6 +1,6 @@
 package concepts;
 
-public class BreakContinueReturn {
+public class BreakContinueReturnGoTo {
     public void printNum() {
         // Initially loop is set to run from 0-9
         for (int i = 0; i <= 10; i++) {
@@ -11,10 +11,11 @@ public class BreakContinueReturn {
                 continue;
             }
 
+            outer:
             // terminate loop when i is 10.
             if (i == 10) {
                 System.out.println("Going to Break");
-                break;
+                break outer; //Goto Replacement
             }
 
             System.out.println("i: " + i);
@@ -24,8 +25,8 @@ public class BreakContinueReturn {
     }
 
     public static void main(String args[]) {
-        BreakContinueReturn breakContinueReturn = new BreakContinueReturn();
-        breakContinueReturn.printNum();
+        BreakContinueReturnGoTo breakContinueReturnGoTo = new BreakContinueReturnGoTo();
+        breakContinueReturnGoTo.printNum();
     }
 }
 
@@ -43,6 +44,7 @@ i: 7
 i: 8
 i: 9
 Going to Break
+i: 10
 Loop complete.
 
  */
